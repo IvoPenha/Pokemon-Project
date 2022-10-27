@@ -1,0 +1,42 @@
+.card{
+    left: 300px;
+    margin-top: 1.875rem;
+    position: absolute;
+    width: 17.5rem;
+    height: 19rem;
+    background-color: --bg-color;
+    background: #332d2d;
+    box-shadow: 0px 10px 10px -5px #5a555573 ;
+    border-radius: 12px;
+    display: block;
+    flex-direction: column;
+    
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .1s;
+}
+.card .img-mask{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.card .card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 2.125rem;
+    
+}
+.card .card-footer span{
+    font-size: .75rem;
+    margin-bottom: 0;
+}
+.card .card-footer h3{
+    margin-top: .3rem;
+}
