@@ -1,0 +1,18 @@
+.loadMore{
+    display: flex;
+    background-color: #882020;
+    width: 12.5rem ;
+    height: 2.8125rem;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    cursor: pointer;
+    border-radius: .375rem;
+}
+.loadMore span{
+    color: white;
+}
+.loadMore:hover{
+    opacity: 1;
+    transition: .5s;
+}

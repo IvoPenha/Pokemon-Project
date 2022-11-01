@@ -1,3 +1,4 @@
+@import './poke-img-mask.css';
 .card{
     left: 300px;
     margin-top: 1.875rem;
@@ -23,17 +24,28 @@
     justify-content: center;
     margin-top: 3rem;
 }
-
+.card .img-background{
+    position: relative;
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    padding: .8rem;
+    border-radius: 50%;
+}
+.card .img-background img{
+    max-width: 12.5rem;
+    max-height: 10.625rem;
+}
 .card .card-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2.5rem;
-    margin-left: 1.5rem;
-    margin-right: 2.125rem;
-    
+    width: 80%;
+    bottom: 16px;
+    margin-left: 30px;
 }
 .card .card-footer span{
+    position: relative;
     font-size: .75rem;
     margin-bottom: 0;
 }

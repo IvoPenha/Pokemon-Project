@@ -1,0 +1,47 @@
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.single-stats{
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+}
+.stats span{
+    width: 4.25rem;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+.stats-bar{
+    position: relative;
+    width: 20rem;
+    height: .1875rem;
+    background-color: #332d2d;
+    display: flex;
+    gap: .25rem;
+}
+.bar{
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    height: .1875rem;
+    background-color: #882020;
+
+}
+.bar ul{
+    position: absolute;
+    display: flex;
+    width: 20rem;
+    margin-left: 3.8rem;
+    gap: 3.8rem;
+}
+.bar ul li{
+    position: relative;
+    background-color: var(--bg-color);
+    height: 3px;
+    width: .25rem;
+ 
+}

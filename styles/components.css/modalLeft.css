@@ -1,0 +1,42 @@
+@import './bg-left-modal.css';
+.left-container{
+    margin: 0;
+    height: 100%;
+    width: 11.9375rem;
+}
+.left-container.grass{
+    background-image: url(../assets/bg-types/grass.svg);
+}
+.left-container .img-box{
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    margin-left: 40px;
+        
+}
+.left-container .img-box img{
+    height: 12rem;
+}
+.icon-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    right: 1rem;
+    top: .5rem;
+}
+.icon-mask{
+    position: absolute;
+    background-color: var(--bg-lighter);
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon-box img{
+    position: absolute;    
+}

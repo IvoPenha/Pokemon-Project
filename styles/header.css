@@ -1,0 +1,7 @@
+.head-section{
+    margin: 0;
+    height: 62.125rem;
+    overflow-x: auto;
+    background-image: url(../assets/bg-dark.svg);
+    background-repeat: no-repeat;
+}

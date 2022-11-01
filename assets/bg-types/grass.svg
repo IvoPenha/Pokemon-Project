@@ -9,19 +9,19 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_620_5937" x1="25.3623" y1="11.4233" x2="362.969" y2="245.34" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D6EBDC"/>
-<stop offset="1" stop-color="#E3FFA7"/>
+<stop stop-color="#7B9582"/>
+<stop offset="1" stop-color="#606B47"/>
 </linearGradient>
 <linearGradient id="paint1_linear_620_5937" x1="22.9721" y1="11.4233" x2="347.678" y2="215.199" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D6EBDC"/>
+<stop stop-color="#131413"/>
 <stop offset="1" stop-color="#E3FFA7"/>
 </linearGradient>
 <linearGradient id="paint2_linear_620_5937" x1="18.3039" y1="15.4628" x2="-237.963" y2="340.262" gradientUnits="userSpaceOnUse">
-<stop stop-color="#68AE28"/>
+<stop stop-color="#7AFF00"/>
 <stop offset="1" stop-color="#68AE28"/>
 </linearGradient>
 <linearGradient id="paint3_linear_620_5937" x1="50.4363" y1="-80.8606" x2="-312.351" y2="378.945" gradientUnits="userSpaceOnUse">
-<stop stop-color="#68AE28"/>
+<stop stop-color="#7AFF00"/>
 <stop offset="1" stop-color="#68AE28"/>
 </linearGradient>
 </defs>

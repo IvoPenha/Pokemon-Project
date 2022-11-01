@@ -1,13 +1,18 @@
-@import'./styles/Text.css';
-@import './styles/search.css';
-@import './styles/card.css';
-@import './styles/tagBag.css';
-@import './styles/list.css';
-@import './styles/footer.css';
+@import'./styles/components.css/Text.css';
+@import './styles/components.css/search.css';
+@import './styles/components.css/card.css';
+@import './styles/components.css/tagBag.css';
+@import './styles/components.css/list.css';
+@import './styles/components.css/footer.css';
+@import './styles/components.css/loadMore.css';
+@import './styles/components.css/tagType.css';
+@import './styles/components.css/modal.css';
+@import './styles/header.css';
 
 :root{
     --bg-color:#242020;
     --bg-lighter:#4A4747;
+    --bg-card: #332d2d;
     --gray-400: #4A4747;
     --red: #f33c3cd8;
     --type-bug: #9BBA48;
@@ -19,7 +24,7 @@
     --type-ground: #CE8056;
     --type-ice: #71BAAC;
     --type-normal: #909090;
-    --type-poison: #AC6ACA;
+    --type-poison: AC6ACA#;
     --type-psychic: #EB8B85;
     --type-rock: #84BEB3;
     --type-ghost: #616EB7;
@@ -41,6 +46,8 @@ img{
 }
 html{
     background-color: #242020;
+    margin-left: 3px;
+    overflow-x: hidden;
 }
 div{
     margin-top: 3px;

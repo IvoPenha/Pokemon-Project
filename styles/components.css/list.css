@@ -1,53 +1,57 @@
 ul{
     list-style: none;
     display: flex;
+    padding-inline-start: 0;
+    
+}
+.type-list{
     flex-direction: column;
     gap: .875rem;
     justify-content: center;
     width: fit-content;
     
 }
-li img{
+.type-list li img{
     width: 1rem ;
     height: 1rem;
 }
-ul li{
+.type-list li{
     filter: grayscale(1);
     
 }
-ul li:hover{
+.type-list li:hover{
     cursor: pointer;
     filter: grayscale(0);
 }
 
-ul li.all:hover span{
+.type-list li.all:hover span{
     color: #3E75C3;
 }
-ul li.ghost:hover span{
+.type-list li.ghost:hover span{
     color: var(--type-ghost);
 }
-ul li.stone:hover span {
+.type-list li.stone:hover span {
     color: var(--type-rock);
 }
-ul li.dragon:hover span {
+.type-list li.dragon:hover span {
     color: var(--type-dragon);
 }
-ul li.steal:hover span{
+.type-list li.steal:hover span{
     color: var(--type-steal);
 }
-ul li.eletric:hover span{
+.type-list li.eletric:hover span{
     color: var(--type-eletric);
 }
-ul li.water:hover span {
+.type-list li.water:hover span {
     color: var(--type-water);
 }
-ul li.fire:hover span {
+.type-list li.fire:hover span {
     color: var(--type-fire);
 }
-ul li.bug:hover span {
+.type-list li.bug:hover span {
     color: var(--type-bug);
 }
-li span{
+.type-list li span{
     font-size: 1rem;
     margin-left: .375rem ;
 }
