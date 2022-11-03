@@ -8,6 +8,8 @@
 @import './styles/components.css/tagType.css';
 @import './styles/components.css/modal.css';
 @import './styles/header.css';
+@import './styles/search-container.css';
+@import './styles/swipper.css';
 
 :root{
     --bg-color:#242020;

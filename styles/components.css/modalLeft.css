@@ -4,9 +4,6 @@
     height: 100%;
     width: 11.9375rem;
 }
-.left-container.grass{
-    background-image: url(../assets/bg-types/grass.svg);
-}
 .left-container .img-box{
     display: flex;
     position: relative;

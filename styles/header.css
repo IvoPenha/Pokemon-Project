@@ -1,7 +1,64 @@
-.head-section{
+.top-section{
+    background-image: url(../assets/bg-dark.svg) ;
     margin: 0;
+    width: 100vw;
     height: 62.125rem;
-    overflow-x: auto;
-    background-image: url(../assets/bg-dark.svg);
     background-repeat: no-repeat;
+    background-position: top ;
+    z-index: 0;
+}
+.top-section.red{
+    background-image: url(../assets/bg-red.svg);
+}
+.header{
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6.9375rem;
+}
+.title-section{
+    margin-top: 1.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokeball-container{
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    margin-top: 6.7rem;
+    margin-left: .375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokeball{
+    z-index: 1;
+}
+.lighting img{
+    max-width: 10.625rem;
+    max-height: 3.75rem;
+    margin-bottom: -20px;
+}
+.down-pointer{
+    cursor: pointer;
+    position: absolute;
+    top: 31.25rem;
+    left: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40px;
+    transition: .4s;
+}
+.down-pointer:hover{
+    transition: linear .4s;
+    transform: scale(1.1);
+}
+.down-pointer h5{
+    pointer-events: none;
+    transform: rotate(270deg);
+    margin-bottom: 1.8rem;
 }

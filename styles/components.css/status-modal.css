@@ -26,7 +26,6 @@
 .bar{
     position: absolute;
     margin: 0;
-    width: 50%;
     height: .1875rem;
     background-color: #882020;
 
@@ -44,4 +43,23 @@
     height: 3px;
     width: .25rem;
  
+}
+
+.bar.hp{
+    width: 70%;
+}
+.bar.attack{
+    width: 30%;
+}
+.bar.defense{
+    width: 53%;
+}
+.bar.sp-defense{
+    width: 40%;
+}
+.bar.sp-attack{
+    width: 90%;
+}
+.bar.speed{
+    width: 10%;
 }
