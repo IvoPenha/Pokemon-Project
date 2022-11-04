@@ -1,15 +1,14 @@
 @import './poke-img-mask.css';
 .card{
-    left: 300px;
     margin-top: 1.875rem;
-    position: absolute;
+    position: relative;
     width: 17.5rem;
     height: 19rem;
     background-color: --bg-color;
     background: #332d2d;
     box-shadow: 0px 10px 10px -5px #5a555573 ;
     border-radius: 12px;
-    display: block;
+    display: flex;
     flex-direction: column;
     
 }

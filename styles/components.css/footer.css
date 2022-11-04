@@ -1,24 +1,19 @@
 footer{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #882020;
-    width: 100%;
-    bottom: 0;
     height: 8rem;
 }
-footer.left-part{
-    margin-top: 3.4rem;
+footer .left-footer-part{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.875rem;
 }
-footer span{
-    margin-left: .5rem;
-    margin-top: 1rem;
-}
-footer h3{
-    margin-top: 2.4rem;
-    margin-left: 4rem;
-}
-footer h4{
-    position: absolute;
-    bottom: 3.4rem;
-    right: 4rem;
+
+footer .right-footer-part{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.875rem;
 }

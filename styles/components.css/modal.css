@@ -3,12 +3,15 @@
 
 
 .modal{
+    top: 0;
+    left: -624.9375rem;
+    position: absolute;
     visibility: hidden;
     
 }
 
 .box{
-    animation: from-bottom ease-in .5s;
+    animation: float ease-in-out .5s;
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     max-height: 31.75rem;
@@ -21,8 +24,9 @@
 
 .modal.ativo{
     visibility: visible;
-    animation: from-behind.2s;
+    animation: from-behind .2s;
     top: 0;
+    left: 0;
     position: fixed;
     display: flex;
     height: 100%;

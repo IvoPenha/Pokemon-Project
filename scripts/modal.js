@@ -1,5 +1,6 @@
+
 const card = document.querySelectorAll('.card')
-const modal = document.querySelector('.modal')
+const modal = document.querySelectorAll('.modal')
 const close = document.querySelector('.close')
 card.forEach(
     item=>{
@@ -8,7 +9,10 @@ card.forEach(
 )
 
 function toggleModal(){
-    modal.classList.toggle('ativo')
+    modal.forEach(
+        item=> item.classList.toggle('ativo')
+    )
+    
 
 }
 

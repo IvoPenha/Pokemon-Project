@@ -6,10 +6,10 @@ ul{
 }
 .type-list{
     flex-direction: column;
-    gap: .875rem;
+    gap: 2.5rem;
     justify-content: center;
     width: fit-content;
-    
+    margin-top: 4.5rem;
 }
 .type-list li img{
     width: 1rem ;
@@ -36,11 +36,11 @@ ul{
 .type-list li.dragon:hover span {
     color: var(--type-dragon);
 }
-.type-list li.steal:hover span{
-    color: var(--type-steal);
+.type-list li.steel:hover span{
+    color: var(--type-steel);
 }
 .type-list li.eletric:hover span{
-    color: var(--type-eletric);
+    color: var(--type-electric);
 }
 .type-list li.water:hover span {
     color: var(--type-water);
@@ -50,6 +50,36 @@ ul{
 }
 .type-list li.bug:hover span {
     color: var(--type-bug);
+}
+.type-list li.dark:hover span {
+    color: var(--type-dark);
+}
+.type-list li.fairy:hover span {
+    color: var(--type-fairy);
+}
+.type-list li.flying:hover span {
+    color: var(--type-flying);
+}
+.type-list li.fighting:hover span {
+    color: var(--type-fighting);
+}
+.type-list li.normal:hover span {
+    color: var(--type-normal);
+}
+.type-list li.poison:hover span {
+    color: var(--type-poison);
+}
+.type-list li.ice:hover span {
+    color: var(--type-ice);
+}
+.type-list li.ground:hover span {
+    color: var(--type-ground);
+}
+.type-list li.psychic:hover span {
+    color: var(--type-psychic);
+}
+.type-list li.ground:hover span {
+    color: var(--type-ground);
 }
 .type-list li span{
     font-size: 1rem;

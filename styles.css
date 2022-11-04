@@ -10,6 +10,8 @@
 @import './styles/header.css';
 @import './styles/search-container.css';
 @import './styles/swipper.css';
+@import './styles/main..css';
+@import './styles/load-more-section.css';
 
 :root{
     --bg-color:#242020;
@@ -26,7 +28,7 @@
     --type-ground: #CE8056;
     --type-ice: #71BAAC;
     --type-normal: #909090;
-    --type-poison: AC6ACA#;
+    --type-poison: #AC6ACA;
     --type-psychic: #EB8B85;
     --type-rock: #84BEB3;
     --type-ghost: #616EB7;
@@ -47,9 +49,5 @@ img{
 }
 html{
     background-color: #242020;
-    margin-left: 3px;
     overflow-x: hidden;
-}
-div{
-    margin-top: 3px;
 }
