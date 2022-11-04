@@ -1,13 +1,15 @@
 .top-section{
     background-image: url(../assets/bg-dark.svg) ;
     margin: 0;
-    width: 100vw;
+    max-width: 100rem;
+    width: 100%;
     height: 62.125rem;
     background-repeat: no-repeat;
     background-position: top ;
     z-index: 0;
 }
 .top-section.red{
+    background-color: #882020;
     background-image: url(../assets/bg-red.svg);
 }
 .header{
@@ -24,22 +26,33 @@
     align-items: center;
 }
 .pokeball-container{
+    z-index: 500 ;
+    animation: float 5s ease-in-out infinite;
     pointer-events: none;
     position: relative;
     width: 100%;
-    margin-top: 6.7rem;
+    margin-top: 7.7rem;
     margin-left: .375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pokeball{
-    z-index: 1;
+.pokeball-container.ultra{
+    margin-top: 6.9rem;
+}
+.pokeball.ultra{
+    margin-top: 3rem;
 }
 .lighting img{
+    animation: growing 5s ease-in-out infinite;
     max-width: 10.625rem;
     max-height: 3.75rem;
-    margin-bottom: -20px;
+    margin-bottom: -1.875rem;
+    margin-top: 1.875rem;
+}
+.lighting.yellow img{
+    margin-bottom: -.4rem;
+
 }
 .down-pointer{
     cursor: pointer;
@@ -54,11 +67,27 @@
     transition: .4s;
 }
 .down-pointer:hover{
-    transition: linear .4s;
+    transition: ease-in-out .4s;
     transform: scale(1.1);
 }
 .down-pointer h5{
     pointer-events: none;
     transform: rotate(270deg);
     margin-bottom: 1.8rem;
+}
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-1rem)
+	}
+}
+@keyframes growing {
+    0%,100%{
+		transform: scale(1)
+	}
+	50%{
+		transform:scale(1.05)
+	}
 }

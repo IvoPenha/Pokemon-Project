@@ -19,7 +19,8 @@
     margin-right: 1rem;
 }
 .tag-bag .img-mask{
-    margin-left: .5rem;
+    margin-left: .8rem;
+    margin-bottom: .1rem;
     display: flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -28,4 +29,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 7.625rem;
+}
+.tag-bag.yellow .img-mask{
+    background-color: #dbdd593d;
 }

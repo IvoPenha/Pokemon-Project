@@ -38,7 +38,6 @@
     --blue-primary: #3F5DB3;
 }
 img{
-    filter: brightness(.85) contrast(1);
 }
 *{
     font-family: 'Montserrat', sans-serif;

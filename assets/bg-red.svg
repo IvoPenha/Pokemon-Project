@@ -1,10 +1,10 @@
-<svg width="1600" height="704" viewBox="0 0 1432 704" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1427" height="704" viewBox="0 0 1432 704" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_21_6990" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="-2" width="1440" height="706">
 <rect y="-2" width="1440" height="706" fill="#C20001"/>
 </mask>
 <g mask="url(#mask0_21_6990)">
-<rect y="-2" width="1500" height="706" fill="#C20001"/>
-<rect y="-2" width="1500" height="706" fill="#882020"/>
+<rect y="-2" width="1440" height="706" fill="#C20001"/>
+<rect y="-2" width="1440" height="706" fill="#882020"/>
 <circle opacity="0.5" cx="720" cy="620" r="192" stroke="url(#paint0_linear_21_6990)" stroke-width="24"/>
 <circle opacity="0.3" cx="720" cy="620" r="246" stroke="url(#paint1_linear_21_6990)" stroke-width="24"/>
 <circle opacity="0.1" cx="720" cy="620" r="301" stroke="url(#paint2_linear_21_6990)" stroke-width="24"/>
