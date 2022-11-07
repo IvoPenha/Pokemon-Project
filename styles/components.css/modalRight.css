@@ -6,6 +6,8 @@
     background-color: var(--bg-color);
 }
 .right-container{
+    display: flex;
+    flex-direction: column;
     margin-left: 3.75rem;
     margin-right: 2rem;
     margin-top: 2.1875rem;

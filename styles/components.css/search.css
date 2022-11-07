@@ -19,6 +19,12 @@
     width: 80%;
     height: 100%;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #4A4747 inset;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: #e5e5e5 !important;
+}
 .search input::placeholder{
     color: #666A6D;
 }

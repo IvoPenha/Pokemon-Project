@@ -18,71 +18,7 @@
     align-items: center;
     margin: 0 111px;
 }
-@media (max-width:43.75rem) {
-    .header{
-        display: flex;
-        margin: 0 32px;
-    }
-    .top-section{
-    }
-    .header img{
-        max-width: 112px;
-    }
-    h1{
-        font-size: 48px;
-        text-align: center;
-    }
-    h2{
-        font-size: 16px;
-        text-align: center;
-    }
-    h3{
-        text-align: center;
-    }
-    .pokeball-container.ultra img{
-        margin-top: 16px;
-    }
-    .pokeball-container img{
-        max-width: 512px;
-    }
-    .lighting img{
-        max-width: 32px;
-    }
-    .down-pointer{
-        left: 10px !important;
-    }
-    .pokeball-container.ultra img{
-        max-width: 224px;
-    }
-    .search-container{
-        display: flex;
-        justify-content: center !important;
-    }
-    .search{
-        max-width: 60%;
-        margin-right: 30px;
-    }
-    .type-list{
-        display: none;
-    }
-    .list{
-        display: none;
-        border: none !important;
-        position: absolute;
 
-    }
-    .main{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: right;
-        margin-left: 1.875rem;
-    }
-    .pokemons-card{
-        padding-left: 0 !important;
-    }
-
-}
 
 
 

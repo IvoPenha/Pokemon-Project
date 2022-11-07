@@ -1,0 +1,179 @@
+@import './components.css/bg-left-responsivty.css';
+@media (max-width: 768px) {
+    .header{
+        display: flex;
+        margin: 0 32px;
+    }
+    .top-section{
+    }
+    .header img{
+        max-width: 112px;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    h4{
+        font-size: .9rem;
+    }
+    span{
+        font-size: .9rem;
+    }
+    strong{
+        font-size: .9rem;
+    }
+    .pokeball-container.ultra img{
+        margin-top: 16px;
+    }
+    .pokeball-container img{
+        max-width: 512px;
+    }
+    .down-pointer{
+        left: 10px !important;
+    }
+    .pokeball-container.ultra img{
+        max-width: 224px;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center !important;
+    }
+    .search{
+        max-width: 60%;
+        margin-right: 30px;
+    }
+    .type-list{
+        display: none;
+    }
+    .list{
+        display: none;
+        border: none !important;
+        position: absolute;
+
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        justify-content: end
+    }
+    .card{
+     display: flex;   
+    }
+    .modal.ativo{
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .box{
+    max-height: 45rem;
+    height: 40rem;
+    max-width: 80%;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    }
+    .modal.ativo{
+        align-items: flex-end;
+    }
+    .left-container{
+        height: 10rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .left-container .img-box{
+        display: flex;
+        position: relative;
+        bottom: -1.875rem;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        margin-left: 40px;
+    }
+    .left-container .img-box img{
+        height: 100%;
+    }
+    .icon-mask{
+        margin: 2rem 1rem 0 0;
+        
+    }
+    .right-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .right-container h4{
+        text-align: center;
+        color: #e6e6e6;
+    }
+    .close{
+        margin-left: 77%;
+        width: 3rem;
+        height: 3rem;
+    }
+    .general-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .infos{
+        margin-top: .8rem;
+        display: flex;
+        text-align: center;
+        column-gap: 6rem;
+        row-gap: 1.5rem;
+        justify-content: center;
+    }
+    .infos li{
+        width: 7rem;
+        text-align: left;
+        flex-direction: row;
+    }
+    .weakness{
+        margin-top: .5rem;
+    }
+    ul.weak{
+        justify-content: center;
+    }
+    .stats-box{
+        margin-top: 1rem;
+
+    }
+    .types-modal{
+        justify-content: center;
+    }
+    .general-info{
+        display: flex;
+        justify-content: center;
+    }
+    .types-modal{
+        width: 100%;
+        justify-content: center;
+    }
+ 
+}
+@media(max-width: 560px){
+    .box{
+        width: 35rem;
+    }
+    
+
+    .infos li span::after{
+        content: ':';
+    }
+    .stats{
+        font-size: .5rem;
+        gap: .5rem;
+    }
+}
