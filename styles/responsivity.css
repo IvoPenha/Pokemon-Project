@@ -24,7 +24,7 @@
     h4{
         font-size: .9rem;
     }
-    span{
+    .modal span{
         font-size: .9rem;
     }
     strong{
@@ -72,14 +72,17 @@
         width: 100%;
         height: 100%;
     }
+    .modal.ativo{
+        display: block;
+    }
     .box{
-    max-height: 45rem;
-    height: 40rem;
-    max-width: 80%;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
+        margin: auto;
+        margin-top: 2.2rem;
+        max-width: 80%;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
     }
     .modal.ativo{
         align-items: flex-end;
@@ -117,11 +120,6 @@
     .right-container h4{
         text-align: center;
         color: #e6e6e6;
-    }
-    .close{
-        margin-left: 77%;
-        width: 3rem;
-        height: 3rem;
     }
     .general-info{
         display: flex;
@@ -161,19 +159,78 @@
         width: 100%;
         justify-content: center;
     }
+    
+.close{
+    position: fixed;
+    right: 0;
+    margin-right: 2.625rem;
+}
  
 }
 @media(max-width: 560px){
-    .box{
-        width: 35rem;
+      h1{
+        font-size: 3rem;
+        text-align: center;
     }
-    
-
+    h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .modal span{
+        font-size: .8rem;
+    }
+    .modal strong{
+        font-size: .8rem;
+    }
+    .box{
+        max-width: 35rem;
+    }
+    .left-container{
+        height: 8rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .right-container{
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .right-container h4{
+        text-align: center;
+        color: #e6e6e6;
+    }
+    .general-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .close{
+        margin-right: 1.75rem;
+    }
+    .main{
+        align-items: flex-end;
+        justify-content: center;
+    }
     .infos li span::after{
         content: ':';
     }
     .stats{
         font-size: .5rem;
         gap: .5rem;
+    }
+    span.tag-type{
+        padding: 0 .8rem;
+    }
+    .infos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
