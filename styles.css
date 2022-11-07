@@ -12,6 +12,7 @@
 @import './styles/swipper.css';
 @import './styles/main..css';
 @import './styles/load-more-section.css';
+@import './styles/components.css/select-input.css';
 
 :root{
     --bg-color:#242020;
