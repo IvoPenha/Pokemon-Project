@@ -4,6 +4,10 @@
         display: flex;
         margin: 0 32px;
     }
+    .title-section{
+        margin: 0 2.1875rem 0 0;
+
+    }
     .top-section{
     }
     .header img{
@@ -59,10 +63,13 @@
         position: absolute;
 
     }
+    .pokemons-card{
+        padding: 0;
+    }
     .main{
         display: flex;
         width: 100%;
-        justify-content: end
+        justify-content: center;
     }
     .card{
      display: flex;   
@@ -148,6 +155,10 @@
         margin-top: 1rem;
 
     }
+    
+    .card-list{
+        justify-content: center;
+    }
     .types-modal{
         justify-content: center;
     }
@@ -187,7 +198,13 @@
         font-size: .8rem;
     }
     .box{
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        z-index: 4000;
+        bottom: -8rem;
         max-width: 35rem;
+        max-height: 60rem !important;
     }
     .left-container{
         height: 8rem;
@@ -215,10 +232,6 @@
     .close{
         margin-right: 1.75rem;
     }
-    .main{
-        align-items: flex-end;
-        justify-content: center;
-    }
     .infos li span::after{
         content: ':';
     }
@@ -232,5 +245,31 @@
     .infos{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .single-stats{
+        gap: .625rem;
+    }
+}
+@media (max-width: 460px) {
+    
+    .search-div h2{
+        display: none;
+    }
+    .search-div .search{
+        max-width: 100%;
+        margin-right: 3rem;
+    }
+    .main{
+        justify-content: start;
+    }
+    .main .pokeball-icon{
+        justify-content: center !important;
+    }
+}
+@media (max-width:380px) {
+   
+    .main{
+        overflow: hidden;
+        justify-content: center;
     }
 }

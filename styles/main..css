@@ -27,6 +27,7 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .card{
     display: flex;
 }
