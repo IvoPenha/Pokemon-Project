@@ -80,11 +80,16 @@
         height: 100%;
     }
     .modal.ativo{
-        display: block;
+        display: flex;
     }
     .box{
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        bottom: 0rem;
+        max-height: 60rem !important;
         margin: auto;
-        margin-top: 2.2rem;
+        top: 5rem;
         max-width: 80%;
         z-index: 2000;
         display: flex;
@@ -202,7 +207,7 @@
         overflow-x: hidden;
         position: absolute;
         z-index: 4000;
-        bottom: -8rem;
+        bottom: -6rem;
         max-width: 35rem;
         max-height: 60rem !important;
     }
@@ -251,25 +256,57 @@
     }
 }
 @media (max-width: 460px) {
-    
+    .search-div{
+        justify-content: end;
+    }
     .search-div h2{
         display: none;
     }
     .search-div .search{
         max-width: 100%;
-        margin-right: 3rem;
-    }
-    .main{
-        justify-content: start;
     }
     .main .pokeball-icon{
         justify-content: center !important;
     }
 }
 @media (max-width:380px) {
-   
+   .box{
+    bottom: -4rem;
+   }
+   .close{
+    margin-right: .4rem;
+    top: 3rem;
+    width: 3rem;
+    height: 3rem;
+   }
     .main{
-        overflow: hidden;
+        overflow-x: hidden;
         justify-content: center;
+    }
+    .types-modal{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .weakness{
+        gap: .2rem;
+    }
+    .weakness ul{
+        justify-content: space-around;
+    }
+    .general-info{
+        gap: .4rem;
+        margin-bottom: .4rem;
+        
+    }
+    .infos{
+        margin-top: 0;
+        gap: 0.4rem;
+    }
+    
+    .weakness{
+        margin-top: 0;
+    }
+    .stats-bar{
+        margin-top: .4rem;
     }
 }
