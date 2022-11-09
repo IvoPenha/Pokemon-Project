@@ -4,10 +4,6 @@
         display: flex;
         margin: 0 32px;
     }
-    .title-section{
-        margin: 0 2.1875rem 0 0;
-
-    }
     .top-section{
     }
     .header img{
@@ -57,6 +53,9 @@
     .type-list{
         display: none;
     }
+    .select-input-type{
+        display: flex;
+    }
     .list{
         display: none;
         border: none !important;
@@ -67,6 +66,7 @@
         padding: 0;
     }
     .main{
+        position: relative;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -74,22 +74,11 @@
     .card{
      display: flex;   
     }
-    .modal.ativo{
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .modal.ativo{
-        display: flex;
-    }
     .box{
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: absolute;
-        bottom: 0rem;
+        position: fixed;
+        bottom: 2rem;
         max-height: 60rem !important;
         margin: auto;
-        top: 5rem;
         max-width: 80%;
         z-index: 2000;
         display: flex;
@@ -97,7 +86,7 @@
         border-radius: 1rem;
     }
     .modal.ativo{
-        align-items: flex-end;
+
     }
     .left-container{
         height: 10rem;
@@ -160,7 +149,12 @@
         margin-top: 1rem;
 
     }
-    
+    .pokeball-icon{
+        margin-top: 1rem;
+    }
+    .pokemons-card{
+        align-items: center;
+    }
     .card-list{
         justify-content: center;
     }
@@ -181,7 +175,22 @@
     right: 0;
     margin-right: 2.625rem;
 }
- 
+ footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
+ }
+ footer .left-footer-part {
+    width: 100%;
+    gap: .75rem;
+    text-align: center;
+}
+ footer .right-footer-part {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+ }
 }
 @media(max-width: 560px){
       h1{
@@ -207,7 +216,7 @@
         overflow-x: hidden;
         position: absolute;
         z-index: 4000;
-        bottom: -6rem;
+        bottom: -5rem;
         max-width: 35rem;
         max-height: 60rem !important;
     }
@@ -216,6 +225,10 @@
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .search-div h2{
+        display: none;
     }
     .right-container{
         height: 30rem;
@@ -259,9 +272,6 @@
     .search-div{
         justify-content: end;
     }
-    .search-div h2{
-        display: none;
-    }
     .search-div .search{
         max-width: 100%;
     }
@@ -270,8 +280,10 @@
     }
 }
 @media (max-width:380px) {
+    .title-section{
+    }
    .box{
-    bottom: -4rem;
+    bottom: -3rem;
    }
    .close{
     margin-right: .4rem;
@@ -308,5 +320,8 @@
     }
     .stats-bar{
         margin-top: .4rem;
+    }
+    .left-footer-part span{
+        font-size: .8rem;
     }
 }

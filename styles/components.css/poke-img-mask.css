@@ -1,73 +1,73 @@
-.card .img-background.ghost{
-    background-color: #5957611A;
-    color: var(--type-ghost);
+.card .img-background.ghost {
+  background-color: #5957611a;
+  color: var(--type-ghost);
 }
 .card .img-background.stone {
-    background-color: #8BCEC11A;
-    color: var(--type-rock);
+  background-color: #8bcec11a;
+  color: var(--type-rock);
 }
 .card .img-background.dragon {
-    background-color: #2C6AC11A;
-    color: var(--type-dragon);
+  background-color: #2c6ac11a;
+  color: var(--type-dragon);
 }
-.card .img-background.steal{
-    background-color: #6594A11A;
-    color: var(--type-steal);
+.card .img-background.steal {
+  background-color: #6594a11a;
+  color: var(--type-steal);
 }
-.card .img-background.eletric{
-    background-color: #EED9671A;
-    color: var(--type-eletric);
+.card .img-background.eletric {
+  background-color: #eed9671a;
+  color: var(--type-eletric);
 }
 .card .img-background.water {
-    background-color: #88A3D41A;
-    color: var(--type-water);
+  background-color: #88a3d41a;
+  color: var(--type-water);
 }
-.card .img-background.fire{
-    background-color: #E963031A;
-    color: var(--type-fire);
+.card .img-background.fire {
+  background-color: #e963031a;
+  color: var(--type-fire);
 }
 .card .img-background.bug {
-    background-color: #9BBA481A;
-    color: var(--type-bug);
+  background-color: #9bba481a;
+  color: var(--type-bug);
 }
 
 .card .img-background.fairy {
-    background-color: #E296E11A;
-    color: var(--type-fairy);
+  background-color: #e296e11a;
+  color: var(--type-fairy);
 }
 .card .img-background.fighting {
-    background-color: #C44D611A;
-    color: var(--type-fighting);
+  background-color: #c44d611a;
+  color: var(--type-fighting);
 }
 .card .img-background.ground {
-    background-color: #CE80561A;
-    color: var(--type-ground);
+  background-color: #ce80561a;
+  color: var(--type-ground);
 }
-.card .img-background.ice{
-    background-color: #8BCEC11A;
-    color: var(--type-ice);
+.card .img-background.ice {
+  background-color: #8bcec11a;
+  color: var(--type-ice);
 }
-.card .img-background.normal{
-    background-color: #A0A29F1A;
-    color: var(--type-normal);
+.card .img-background.normal {
+  background-color: #a0a29f1a;
+  color: var(--type-normal);
 }
-.card .img-background.poison{
-    background-color: #AC6ACA1A;
-    color: var(--type-poison);
+.card .img-background.poison {
+  background-color: #ac6aca1a;
+  color: var(--type-poison);
 }
-.card .img-background.psychic{
-    background-color: #EB8B851A;
-    color:var(--type-psychic);
+.card .img-background.psychic {
+  background-color: #eb8b851a;
+  color: var(--type-psychic);
 }
-.card .img-background.grass{
-    background-color: #5CA48A1A;
-    color: var(--type-grass);
+.card .img-background.grass {
+  background-color: #5ca48a1a;
+  color: var(--type-grass);
 }
-.card .img-background.flying{
-    background-color: #A6BBE81A;
-    color: var(--type-flying);
+.card .img-background.flying {
+  background-color: #a6bbe81a;
+  color: var(--type-flying);
 }
-.card .img-background.dark{
-    background-color: #5957611A;
-    color: var(--type-dark);
+.card .img-background.dark {
+  background-color: #5957611a;
+  color: var(--type-dark);
 }

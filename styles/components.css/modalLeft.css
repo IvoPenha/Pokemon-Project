@@ -1,7 +1,6 @@
 @import './bg-left-modal.css';
 .left-container{
     margin: 0;
-    height: 100%;
     width: 11.9375rem;
 }
 .left-container .img-box{
