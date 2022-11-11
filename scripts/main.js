@@ -68,9 +68,8 @@ function createPokemonCard(name, type, id, sprite){
     
     const pokemonTypeIcon = document.createElement('img')
     pokemonCardFooter.appendChild(pokemonTypeIcon)
-    pokemonTypeIcon.src= '../assets/icon-types/'+type+'.svg'
+    pokemonTypeIcon.src= 'assets/icon-types/'+type+'.svg'
     cardListener()
-
 }
 
 function cardListener(){

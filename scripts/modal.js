@@ -26,7 +26,7 @@ export default function createModal(name, id, sprite, types, abilities, height, 
     leftContainerIconBox.appendChild(leftContainerIconMask)
 
     const leftContainerIconType = document.createElement('img')
-    leftContainerIconType.src ='../assets/icon-types/'+ types[0].type.name+'.svg'
+    leftContainerIconType.src ='assets/icon-types/'+ types[0].type.name+'.svg'
     leftContainerIconMask.appendChild(leftContainerIconType)
 
     const leftContainerImageBox = document.createElement('div')
