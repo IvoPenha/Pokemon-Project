@@ -5,6 +5,7 @@ ul{
     
 }
 .type-list{
+    padding-right: 30px;
     flex-direction: column;
     gap: 2.5rem;
     justify-content: center;

@@ -6,16 +6,16 @@
 .left-container.ghost{
     background-image: url(./../../assets/responsive-bg-types/ghost.svg);
 }
-.left-container.stone {
+.left-container.rock {
     background-image: url(./../../assets/responsive-bg-types/rock.svg);
 }
 .left-container.dragon {
     background-image: url(./../../assets/responsive-bg-types/dragon.svg);
 }
-.left-container.steal{
+.left-container.steel{
     background-image: url(./../../assets/responsive-bg-types/steel.svg);
 }
-.left-container.eletric{
+.left-container.electric{
     background-image: url(./../../assets/responsive-bg-types/electric.svg);
 }
 .left-container.water {
@@ -32,7 +32,7 @@
     background-image: url(./../../assets/responsive-bg-types/fairy.svg);
 }
 .left-container.fighting {
-    background-image: url(.../../../assets/responsive-bg-types/fighting.svg);
+    background-image: url(./../../assets/responsive-bg-types/fighting.svg);
 }
 .left-container.ground {
     background-image: url(./../../assets/responsive-bg-types/ground.svg);
@@ -41,7 +41,7 @@
     background-image: url(./../../assets/responsive-bg-types/ice.svg);
 }
 .left-container.normal{
-    background-image: url(.../../../assets/responsive-bg-types/normal.svg);
+    background-image: url(./../../assets/responsive-bg-types/normal.svg);
 }
 .left-container.poison{
     background-image: url(./../../assets/responsive-bg-types/poison.svg);

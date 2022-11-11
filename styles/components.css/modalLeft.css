@@ -12,7 +12,8 @@
         
 }
 .left-container .img-box img{
-    height: 12rem;
+    max-height: 12rem;
+    max-width: 12rem;
 }
 .icon-box{
     position: relative;

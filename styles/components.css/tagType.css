@@ -12,7 +12,7 @@
     background-color: #5957611A;
     color: var(--type-ghost);
 }
-.tag-type.stone {
+.tag-type.rock {
     background-color: #8BCEC11A;
     color: var(--type-rock);
 }
@@ -20,13 +20,13 @@
     background-color: #2C6AC11A;
     color: var(--type-dragon);
 }
-.tag-type.steal{
+.tag-type.steel{
     background-color: #6594A11A;
-    color: var(--type-steal);
+    color: var(--type-steel);
 }
-.tag-type.eletric{
+.tag-type.electric{
     background-color: #EED9671A;
-    color: var(--type-eletric);
+    color: var(--type-electric);
 }
 .tag-type.water {
     background-color: #88A3D41A;

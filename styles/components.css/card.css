@@ -1,5 +1,6 @@
 @import './poke-img-mask.css';
 .card{
+    transition: ease-in-out  .2s;
     margin-top: 1.875rem;
     position: relative;
     width: 17.5rem;
@@ -26,14 +27,16 @@
 .card .img-background{
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 11rem;
     height: 11rem;
     padding: .8rem;
     border-radius: 50%;
 }
 .card .img-background img{
-    max-width: 12.5rem;
-    max-height: 10.625rem;
+    max-width: 9rem;
+    max-height: 8rem;
 }
 .card .card-footer{
     display: flex;

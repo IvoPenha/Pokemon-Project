@@ -47,7 +47,7 @@
         justify-content: center !important;
     }
     .search{
-        max-width: 60%;
+        max-width: 80%;
         margin-right: 30px;
     }
     .type-list{
@@ -128,14 +128,13 @@
     }
     .infos{
         margin-top: .8rem;
-        display: flex;
-        text-align: center;
-        column-gap: 6rem;
-        row-gap: 1.5rem;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
     .infos li{
-        width: 7rem;
+        width: 1rem;
+        margin: 0;
         text-align: left;
         flex-direction: row;
     }
@@ -227,8 +226,10 @@
         background-repeat: no-repeat;
     }
 
-    .search-div h2{
-        display: none;
+    .search-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
     .right-container{
         height: 30rem;
@@ -260,10 +261,6 @@
     span.tag-type{
         padding: 0 .8rem;
     }
-    .infos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .single-stats{
         gap: .625rem;
     }
@@ -271,9 +268,6 @@
 @media (max-width: 460px) {
     .search-div{
         justify-content: end;
-    }
-    .search-div .search{
-        max-width: 100%;
     }
     .main .pokeball-icon{
         justify-content: center !important;
@@ -299,12 +293,6 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    .weakness{
-        gap: .2rem;
-    }
-    .weakness ul{
-        justify-content: space-around;
-    }
     .general-info{
         gap: .4rem;
         margin-bottom: .4rem;
@@ -315,9 +303,6 @@
         gap: 0.4rem;
     }
     
-    .weakness{
-        margin-top: 0;
-    }
     .stats-bar{
         margin-top: .4rem;
     }
