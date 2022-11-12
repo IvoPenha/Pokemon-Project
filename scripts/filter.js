@@ -32,14 +32,15 @@ export function pullPokemonCaseAll(){
 
 }
 
-export default function pullPokemonByType(index){
+export default async function pullPokemonByType(index){
+    stop('oi')
     resetCardList()
     if (index === 0 | index ==='all'){
         pullPokemonCaseAll()
         return 0
     }
     
-    axios({
+ await axios({
         baseURL: 'https://pokeapi.co/api/v2/type/' + index
 }).then( r => r.data.pokemon)
 .then(

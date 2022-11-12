@@ -42,8 +42,16 @@ pullPokemonNumbers('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0')
 }
 
 const PokemonCardList = document.querySelector('.card-list')
+let bool
+export function stop(i){
+   bool = i===undefined 
+}
 
 export function createPokemonCard(name, type, id, sprite){
+    
+    if( bool=== false)
+        return 0
+
     if(sprite === null)
         return 0
     const pokemonSingleCard = document.createElement('div')
