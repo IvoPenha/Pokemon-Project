@@ -28,10 +28,13 @@ ul{
 .type-list li.all:hover span{
     color: #3E75C3;
 }
+.type-list li.grass:hover span {
+    color: var(--type-grass);
+}
 .type-list li.ghost:hover span{
     color: var(--type-ghost);
 }
-.type-list li.stone:hover span {
+.type-list li.rock:hover span {
     color: var(--type-rock);
 }
 .type-list li.dragon:hover span {

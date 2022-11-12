@@ -35,11 +35,7 @@
                         <h1 class="black" >Who is that Pokémon?</h1>
                         <h3>The perfect guide for those who want to hunt Pokémons around the world</h3>
                     </div>
-        
-                <div class="search-container">
-        
-                </div>
-                
+                        
                 </div>
                 <div class="pokeball-container">
                     <div class="lighting">
@@ -60,11 +56,12 @@
                     <div class="search-div">
             
                         <h2>Select your pokemon</h2>
-                        <div class="search">
+                        <form class="search" onsubmit="return false" spellcheck="false">
                            <input type="text" name="name" placeholder="Search Pokemon">
-                           <div class="img-mask">
-                               <img src="assets/icon-search.svg" alt="search"></div>
-                       </div>
+                           <button class="img-mask">
+                               <img src="assets/icon-search.svg" alt="search">
+                            </button>
+                       </form>
                     </div>
                 </section>
             </div>
@@ -133,18 +130,19 @@
                 <li class="flying"><img src="assets/icon-types/flying.svg"> <span >Flying</span></li>
                 <li class="poison"><img src="assets/icon-types/poison.svg"> <span >Poison</span></li>
                 <li class="ground"><img src="assets/icon-types/ground.svg"> <span >Ground</span></li>
+                <li class="rock"><img src="assets/icon-types/rock.svg "> <span >Rock </span> </li>
+                <li class="bug"><img src="assets/icon-types/bug.svg "> <span>Bug </span> </li>
+                <li class="ghost"><img src="assets/icon-types/ghost.svg "> <span >Ghost </span> </li>
+                <li class="steel"><img src="assets/icon-types/steel.svg "> <span> Steel </span> </li>
+                <li class="fire"><img src="assets/icon-types/fire.svg "> <span >Fire </span> </li>
+                <li class="water"><img src="assets/icon-types/water.svg "> <span >Water </span> </li>
+                <li class="grass" data-value="grass"><img src="assets/icon-types/grass.svg"> <span >Grass</span></li>
+                <li class="eletric"><img src="assets/icon-types/electric.svg "> <span >Eletric </span> </li>
                 <li class="psychic"><img src="assets/icon-types/psychic.svg"> <span >Psychic</span></li>
                 <li class="ice"><img src="assets/icon-types/ice.svg"> <span >Ice</span></li>
+                <li class="dragon"><img src="assets/icon-types/dragon.svg "> <span>Dragon </span> </li>
                 <li class="dark"><img src="assets/icon-types/dark.svg"> <span >Dark</span></li>
                 <li class="fairy"><img src="assets/icon-types/fairy.svg"> <span >Fairy</span></li>
-                <li class="ghost"><img src="assets/icon-types/ghost.svg "> <span >Ghost </span> </li>
-                <li class="stone"><img src="assets/icon-types/rock.svg "> <span >Stone </span> </li>
-                <li class="dragon"><img src="assets/icon-types/dragon.svg "> <span>Dragon </span> </li>
-                <li class="steel"><img src="assets/icon-types/steel.svg "> <span> Steel </span> </li>
-                <li class="eletric"><img src="assets/icon-types/electric.svg "> <span >Eletric </span> </li>
-                <li class="water"><img src="assets/icon-types/water.svg "> <span >Water </span> </li>
-                <li class="fire"><img src="assets/icon-types/fire.svg "> <span >Fire </span> </li>
-                <li class="bug"><img src="assets/icon-types/bug.svg "> <span>Bug </span> </li>
             </ul>
 
         </div>
@@ -162,6 +160,7 @@
                 </button>
                 <ul name="type" class="select-type-options">
                     <li class="all active-option-item" data-value="all"><img src="assets/icon-all.svg"> <span >All</span></li>
+                    <li class="grass" data-value="grass"><img src="assets/icon-types/grass.svg"> <span >Grass</span></li>
                     <li class="normal" data-value="normal"><img src="assets/icon-types/normal.svg"> <span >Normal</span></li>
                     <li class="fighting" data-value="fighting"><img src="assets/icon-types/fighting.svg"> <span >Fighting</span></li>
                     <li class="flying" data-value="flying"><img src="assets/icon-types/flying.svg"> <span >Flying</span></li>

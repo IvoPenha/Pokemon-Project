@@ -265,7 +265,14 @@ export default function createModal(name, id, sprite, types, abilities, height, 
     speedSeparator.innerHTML = "<li></li> <li></li> <li></li> <li></li> "
     speedStatsBarFull.appendChild(speedSeparator)
 
-
+    modalBox.animate([
+        // keyframes
+        { transform: 'translateY(400px)'
+        },
+        { transform: 'translateY(0)' },
+      ],{
+        duration: 200,
+      })
 
 }
 

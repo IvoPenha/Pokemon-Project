@@ -3,7 +3,9 @@ import  toHandleCase  from "./toHandleCase.js";
 let card = document.querySelectorAll('.card')
 let apiIndex = 0
 const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
-function pullPokemonsData(pokeurl){
+export function pullPokemonsData(pokeurl, index){
+pullPokemonNumbers('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0')
+
     axios({
         baseURL: pokeurl
     })
@@ -17,8 +19,8 @@ function pullPokemonsData(pokeurl){
                 }).then(r=> r.data)
                 .then(pokemon => {
                     const { name, types, id, sprites,} = pokemon
-                    
-                    createPokemonCard(name, types[0].type.name, id, sprites.other.dream_world.front_default )
+                    let spriteSelected = (sprites.other.dream_world.front_default !== null) ? sprites.other.dream_world.front_default : sprites.front_default
+                    createPokemonCard(name, types[0].type.name, id, spriteSelected )
                 }
                 )
             }
@@ -26,11 +28,16 @@ function pullPokemonsData(pokeurl){
     })
     // sprites.versions["generation-v"]["black-white"].animated.front_default
     apiIndex+=12
+    if(index === 'reset')
+        apiIndex=12
+
 }
 
 const PokemonCardList = document.querySelector('.card-list')
 
-function createPokemonCard(name, type, id, sprite){
+export function createPokemonCard(name, type, id, sprite){
+    if(sprite === null)
+        return 0
     const pokemonSingleCard = document.createElement('div')
     pokemonSingleCard.className = 'card'
     PokemonCardList.appendChild(pokemonSingleCard)
@@ -69,6 +76,13 @@ function createPokemonCard(name, type, id, sprite){
     const pokemonTypeIcon = document.createElement('img')
     pokemonCardFooter.appendChild(pokemonTypeIcon)
     pokemonTypeIcon.src= 'assets/icon-types/'+type+'.svg'
+
+    pokemonSingleCard.animate([
+        // keyframes
+        { transform: 'translateX(100px)'
+        },
+        { transform: 'translateX( 0 )' }
+      ],100)
     cardListener()
 }
 
@@ -97,14 +111,13 @@ function toggleModal(event){
        
 }
 
-function pullPokemonNumbers(){
+export function pullPokemonNumbers(pokeUrl){
     axios({
-        baseURL:'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0',
+        baseURL:pokeUrl,
     })
     .then(r=>r.data).then(j=> pokemonTotalNumber.innerText = j.count + ' pokemons')
     
 }
-pullPokemonNumbers()
 
 
 function pullDetailedPokemonDatas(pokeurl){
@@ -114,8 +127,10 @@ function pullDetailedPokemonDatas(pokeurl){
     .then(r=> r.data)
     .then( pokemon => {
                     const { name, types, id, sprites, ability, weight, height, stats, abilities } = pokemon
+                    let spriteSelected = (sprites.other.dream_world.front_default !== null) ? sprites.other.dream_world.front_default : sprites.front_default
+                   
 
-                    createModal(name,id, sprites.other.dream_world.front_default, types, abilities, height, weight, stats)
+                    createModal(name,id, spriteSelected, types, abilities, height, weight, stats)
                     // createModal(name, types, id, sprites.other.dream_world.front_default, weight,height,abilities,stats)
                     // name, types, id, sprites.other.dream_world.front_default, 
                 }
@@ -129,7 +144,7 @@ function pullDetailedPokemonDatas(pokeurl){
 
 
 
-pullPokemonsData('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0')
+pullPokemonsData('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0', 'reset')
 
 const loadMorePokemonBtn = document.querySelector('.loadMore')
 

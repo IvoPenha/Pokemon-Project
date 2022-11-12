@@ -1,3 +1,4 @@
+import pullPokemonByType from "./filter.js"
 const select = document.querySelector('.select-input-type')
 const optionsList = document.querySelector('.select-type-options')
 const options = document.querySelectorAll('.select-type-options li')
@@ -12,6 +13,7 @@ selectDropdownBtn.addEventListener('click', toogleSelectDropdown)
 options.forEach(
     option=> option.addEventListener('click', ()=>{
         handleSelectedTypeSelectDropdown(option)
+        pullPokemonByType(option.dataset.value)
     })
 )
 

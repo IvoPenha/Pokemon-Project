@@ -35,8 +35,8 @@
     border-radius: 50%;
 }
 .card .img-background img{
-    max-width: 9rem;
-    max-height: 8rem;
+    width: 9rem;
+    height: 8rem;
 }
 .card .card-footer{
     display: flex;

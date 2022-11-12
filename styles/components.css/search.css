@@ -42,6 +42,7 @@ input:-webkit-autofill {
     opacity: 1;
 }
 .search .img-mask{
+    border: none;
     display: flex;
     width: 2.625rem;
     height: 2.625rem;

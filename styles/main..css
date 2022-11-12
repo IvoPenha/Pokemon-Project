@@ -31,3 +31,27 @@
 .card{
     display: flex;
 }
+.up{
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    position: fixed;
+    right: 1.875rem;
+    bottom: 7rem;
+    z-index: 20;
+}
+.up img{
+    height: 4rem;
+    border: black;
+    filter: brightness(.65);
+}
+.up img:hover{
+    transform: scale(1.05);
+    animation: ease-in-out 2s;
+}
+
+.up.inativo{
+    display: none;
+}
