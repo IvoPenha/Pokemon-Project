@@ -43,9 +43,8 @@
     z-index: 20;
 }
 .up img{
-    height: 4rem;
-    border: black;
-    filter: brightness(.65);
+    height: 3rem;
+    filter: brightness(.8);
 }
 .up img:hover{
     transform: scale(1.05);
