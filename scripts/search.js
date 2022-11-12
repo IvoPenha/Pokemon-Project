@@ -14,7 +14,7 @@ inputEnter.forEach(
     (item,index)=> item.addEventListener('click', () => pullEspecificPokemon(index))
 
 )
-function pullEspecificPokemon(index){
+async function pullEspecificPokemon(index){
     
     select.style.outline= '1px solid var(--type-all)'
     resetCardList()
@@ -28,7 +28,7 @@ function pullEspecificPokemon(index){
 
     else {
         
-        axios({
+      await  axios({
             baseURL: 'https://pokeapi.co/api/v2/pokemon/'+ searchedPokemon[index].value.toLowerCase()
         }).then(r=> r.data)
         .then(pokemon => {
