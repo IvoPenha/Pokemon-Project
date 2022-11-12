@@ -2,7 +2,7 @@ import { pullPokemonCaseAll, removeAtivoFromList } from "./filter.js"
 import {  createPokemonCard } from "./main.js"
 import resetCardList from "./resetState.js"
 import scrollToListStart from "./windowScroller.js"
-const searchedPokemon = document.querySelector('.search input')
+const searchedPokemon = document.querySelectorAll('.search input')
 const inputEnter = document.querySelectorAll('.search .img-mask')
 const loadMore = document.querySelector('.loadMore')
 const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
@@ -10,17 +10,18 @@ const cardList = document.querySelector('.card-list')
 const ElementAllFromList = document.querySelector('.type-list li.all')
 const select = document.querySelector('.select-input-type')
 
-inputEnter.forEach(item=> item.addEventListener('click', pullEspecificPokemon))
+inputEnter.forEach(
+    (item,index)=> item.addEventListener('click', () => pullEspecificPokemon(index))
 
-function pullEspecificPokemon(){
+)
+function pullEspecificPokemon(index){
     
     select.style.outline= '1px solid var(--type-all)'
     resetCardList()
     removeAtivoFromList()
     pokemonTotalNumber.innerHTML = '0 pokemons'
-    scrollToListStart()
     
-    if(searchedPokemon.value===''){
+    if(searchedPokemon[index].value===''){
         handleZeroPokemon()
         }
 
@@ -28,7 +29,7 @@ function pullEspecificPokemon(){
     else {
         
         axios({
-            baseURL: 'https://pokeapi.co/api/v2/pokemon/'+ searchedPokemon.value.toLowerCase()
+            baseURL: 'https://pokeapi.co/api/v2/pokemon/'+ searchedPokemon[index].value.toLowerCase()
         }).then(r=> r.data)
         .then(pokemon => {
             let { name, types, id, sprites,} = pokemon
