@@ -207,7 +207,7 @@ export default function createModal(name, id, sprite, types, abilities, height, 
     stats.appendChild(spAttackStatusSection)
 
     const spAttackStatusSectionTitle = document.createElement('span')
-    spAttackStatusSectionTitle.innerText = 'sp. attack'
+    spAttackStatusSectionTitle.innerText = 'Sp attack'
     spAttackStatusSection.appendChild(spAttackStatusSectionTitle)
 
     const spAttackStatsBarList = document.createElement('ul')
@@ -228,7 +228,7 @@ export default function createModal(name, id, sprite, types, abilities, height, 
     stats.appendChild(spDefenseStatusSection)
 
     const spDefenseStatusSectionTitle = document.createElement('span')
-    spDefenseStatusSectionTitle.innerText = 'Sp. defense'
+    spDefenseStatusSectionTitle.innerText = 'Sp defense'
     spDefenseStatusSection.appendChild(spDefenseStatusSectionTitle)
 
     const spDefenseStatsBarList = document.createElement('ul')

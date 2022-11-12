@@ -41,7 +41,9 @@
     --type-flying: #758CBD;
     --blue-primary: #3F5DB3;
 }
-img{
+.body-wrapper{
+    position: fixed;
+    overflow-x: hidden;
 }
 *{
     font-family: 'Montserrat', sans-serif;
