@@ -256,6 +256,10 @@
     .infos li span::after{
         content: ':';
     }
+    .infos{
+        justify-content: center;
+
+    }
     .stats{
         font-size: .5rem;
         gap: .5rem;
@@ -279,7 +283,12 @@
     .title-section{
     }
    .box{
+
     bottom: -3rem;
+   }
+   .modal{
+    overflow-y: auto;
+
    }
    .close{
     margin-right: .4rem;

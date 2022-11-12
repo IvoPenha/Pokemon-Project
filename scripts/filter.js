@@ -6,18 +6,29 @@ const listItems = document.querySelectorAll('.type-list li')
 listItems.forEach(
     (listItem,index) => {
         listItem.addEventListener(
-            'click', () => pullPokemonByType(index)
+            'click', () => {
+                pullPokemonByType(index)
+                removeAtivoFromList()
+                listItem.classList.add('ativo')
+            }
         )
     }
 )
 
+export function removeAtivoFromList(){
+    listItems.forEach(
+        item=> item.classList.remove('ativo')
+    )
+}
+
 const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
 const loadMore = document.querySelector('.loadMore')
 
-function pullPokemonCaseAll(){
+export function pullPokemonCaseAll(){
     pullPokemonsData('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0','reset')
     loadMore.classList.contains('inativo')
         loadMore.classList.remove('inativo')
+    scrollToListStart()
 
 }
 

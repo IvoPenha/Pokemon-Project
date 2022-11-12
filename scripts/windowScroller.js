@@ -16,13 +16,19 @@ const upBtn = document.createElement('button')
 upBtn.classList.add('up')
 upBtn.innerHTML = '<img src="assets/arrow-down-red.svg">'
 upBtn.style.transform= "rotate(180deg)"
+
+function handleUpButton(){
+     window.pageYOffset>=1500 ? upBtn.classList.remove('inativo') : upBtn.classList.add('inativo')
+
+}
+
 main.appendChild(upBtn)
 upBtn.addEventListener('click', ()=>{
     scrollToListStart()
     upBtn.classList.add('inativo')
 } )
 window.addEventListener('scroll', (event)=>{
-     window.pageYOffset>=1500 ? upBtn.classList.remove('inativo') : upBtn.classList.add('inativo')
+       handleUpButton()
        
     }
 )

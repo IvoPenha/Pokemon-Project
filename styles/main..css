@@ -47,10 +47,13 @@
     filter: brightness(.8);
 }
 .up img:hover{
-    transform: scale(1.05);
+    transform: scale(1.3);
     animation: ease-in-out 2s;
 }
 
 .up.inativo{
-    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    animation: to-bottom .5s infinite ;
+    transition: .5s;
 }

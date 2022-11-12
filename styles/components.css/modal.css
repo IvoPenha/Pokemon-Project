@@ -68,7 +68,7 @@
   }
 
   to {
-    transform: translateY(30%);
+    transform: translateX(300px);
     opacity: 0;
   }
 }

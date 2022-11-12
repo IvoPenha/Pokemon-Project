@@ -1,8 +1,12 @@
 import createModal from "./modal.js"
+import { handleSelectedTypeSelectDropdown, toogleSelectDropdown } from "./select.js";
 import  toHandleCase  from "./toHandleCase.js";
 let card = document.querySelectorAll('.card')
 let apiIndex = 0
 const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
+const ElementAllFromList = document.querySelector('.type-list li.all')
+const allElementFromSelect = document.querySelector('.select-type-options li.all')
+const select = document.querySelector('.select-input-type')
 export function pullPokemonsData(pokeurl, index){
 pullPokemonNumbers('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0')
 
@@ -30,6 +34,10 @@ pullPokemonNumbers('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0')
     apiIndex+=12
     if(index === 'reset')
         apiIndex=12
+    ElementAllFromList.classList.add('ativo')
+    handleSelectedTypeSelectDropdown(allElementFromSelect)
+    toogleSelectDropdown()
+    select.style.outline= '1px solid var(--type-all)'
 
 }
 
@@ -79,10 +87,12 @@ export function createPokemonCard(name, type, id, sprite){
 
     pokemonSingleCard.animate([
         // keyframes
-        { transform: 'translateX(100px)'
+        { transform: 'translateY(50px) translateX(-50px)',
+        opacity: 0 ,
+        filter : 'brightness(0)'
         },
-        { transform: 'translateX( 0 )' }
-      ],100)
+        { transform: 'translateY( 0 )' }
+      ],300)
     cardListener()
 }
 

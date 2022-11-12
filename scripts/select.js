@@ -14,10 +14,11 @@ options.forEach(
     option=> option.addEventListener('click', ()=>{
         handleSelectedTypeSelectDropdown(option)
         pullPokemonByType(option.dataset.value)
+        select.style.outline= '1px solid var(--type-'+option.dataset.value+')'
     })
 )
 
-function toogleSelectDropdown(){
+export function toogleSelectDropdown(){
     optionsList.classList.toggle('active')
 }
 
@@ -26,7 +27,7 @@ function removeActiveOptionsClass(){
         option=> option.classList.remove('active-option-item')
     )
 }
-function handleSelectedTypeSelectDropdown(e){
+export function handleSelectedTypeSelectDropdown(e){
     removeActiveOptionsClass()
     e.classList.add('active-option-item')
     handleSelectedType()
