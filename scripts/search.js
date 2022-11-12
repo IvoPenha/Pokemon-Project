@@ -3,14 +3,14 @@ import {  createPokemonCard } from "./main.js"
 import resetCardList from "./resetState.js"
 import scrollToListStart from "./windowScroller.js"
 const searchedPokemon = document.querySelector('.search input')
-const inputEnter = document.querySelector('.search .img-mask')
+const inputEnter = document.querySelectorAll('.search .img-mask')
 const loadMore = document.querySelector('.loadMore')
 const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
 const cardList = document.querySelector('.card-list')
 const ElementAllFromList = document.querySelector('.type-list li.all')
 const select = document.querySelector('.select-input-type')
 
-inputEnter.addEventListener('click', pullEspecificPokemon)
+inputEnter.forEach(item=> item.addEventListener('click', pullEspecificPokemon))
 
 function pullEspecificPokemon(){
     
