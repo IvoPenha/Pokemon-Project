@@ -32,6 +32,8 @@ async function pullEspecificPokemon(index){
             baseURL: 'https://pokeapi.co/api/v2/pokemon/'+ searchedPokemon[index].value.toLowerCase()
         }).then(r=> r.data)
         .then(pokemon => {
+        resetCardList()
+
             let { name, types, id, sprites,} = pokemon
             let spriteSelected = (sprites.other.dream_world.front_default !== null) ? sprites.other.dream_world.front_default : sprites.front_default
             createPokemonCard(name, types[0].type.name, id, spriteSelected )
