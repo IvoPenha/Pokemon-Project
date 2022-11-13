@@ -19,11 +19,14 @@
     width: 80%;
     height: 100%;
 }
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #4A4747 inset;
+.search input:focus{
+    outline: none;
+    border: none;
 }
 input:-webkit-autofill {
     -webkit-text-fill-color: #e5e5e5 !important;
+    -webkit-box-shadow: 0 0 0 40px #4A4747 inset;
+    
 }
 .search input::placeholder{
     color: #666A6D;
@@ -52,3 +55,44 @@ input:-webkit-autofill {
     align-items: center;
     border-radius: 7.625rem;
 }
+
+.loader {
+
+
+    margin: auto;
+  
+  
+    border: 20px solid #242420;
+  
+  
+    border-radius: 50%;
+  
+  
+    border-top: 20px solid #f33c3c3d;
+  
+  
+    width: 200px;
+  
+  
+    height: 200px;
+  
+  
+    animation: spinner 4s linear infinite;
+  
+  
+  }
+  
+  
+   
+  
+  
+  @keyframes spinner {
+  
+  
+    0% { transform: rotate(0deg); }
+  
+  
+    100% { transform: rotate(360deg); }
+  
+  
+  }

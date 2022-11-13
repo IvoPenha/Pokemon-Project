@@ -23,6 +23,7 @@
     flex-direction: column;
 }
 .card-list{
+    min-height: 30rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -56,4 +57,40 @@
     pointer-events: none;
     animation: to-bottom .5s infinite ;
     transition: .5s;
+}
+
+.zero-pokemons{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 12rem;
+    background: #332d2d;
+    box-shadow: 0px 10px 10px -5px #5a555573 ;
+    border-radius: 12px;
+    width: 24rem;
+    margin-top: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.zero-pokemons .zero-pokeball{
+    display: inline;
+}
+.zero-pokemons .zero-pokeball img{
+    width: 9.5rem;
+    
+}
+.zero-pokemons h4{
+    margin-bottom: .6rem;
+    color: rgb(230, 172, 172);
+    font-size: xx-large;
+}
+.zero-pokemons p{
+    margin-bottom: .6rem;
+}
+.zero-pokemons:hover{
+    filter: brightness(0.9);
+    transition: .5s ease-in-out;
+
 }

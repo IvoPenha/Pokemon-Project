@@ -2,12 +2,16 @@ import  {createPokemonCard, pullPokemonNumbers, pullPokemonsData}  from "./main.
 import resetCardList from "./resetState.js"
 import scrollToListStart from "./windowScroller.js"
 const listItems = document.querySelectorAll('.type-list li')
+let loading = document.createElement('div')
+const cardList = document.querySelector('.card-list')
+
+loading.className ='loader'
 
 listItems.forEach(
     (listItem,index) => {
         listItem.addEventListener(
             'click', () => {
-                pullPokemonByType(index)
+                handleFilter(index)
                 removeAtivoFromList()
                 listItem.classList.add('ativo')
             }
@@ -25,12 +29,20 @@ const pokemonTotalNumber = document.querySelector('.pokeball-icon h4')
 const loadMore = document.querySelector('.loadMore')
 
 export function pullPokemonCaseAll(){
+    resetCardList()
     pullPokemonsData('https://pokeapi.co/api/v2/pokemon?limit=12&offset=0','reset')
     loadMore.classList.contains('inativo')
         loadMore.classList.remove('inativo')
     scrollToListStart()
 
 }
+
+export function handleFilter(index){
+    resetCardList()
+    cardList.appendChild(loading)
+    setTimeout(()=> pullPokemonByType(index), 200)
+}
+
 
 export default async function pullPokemonByType(index){
     stop('oi')

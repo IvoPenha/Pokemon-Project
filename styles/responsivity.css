@@ -193,6 +193,16 @@
     margin-right: 0;
     text-align: center;
  }
+ .loader{
+    margin-top: 6rem;
+    width: 8rem;
+    height: 8rem;
+    border: 20px solid #242420;
+
+    border-top: 20px solid #f33c3c3d;
+
+
+ }
 }
 @media(max-width: 560px){
       h1{
@@ -272,16 +282,25 @@
     }
 }
 @media (max-width: 460px) {
+    .zero-pokemons{
+        width: 100%;
+    }
+
     .search-div{
         justify-content: end;
     }
     .main .pokeball-icon{
         justify-content: center !important;
     }
+    
+    .zero-pokemons{
+        align-items: center;
+    }
+    .zero-pokemons .zero-pokeball img{
+        width: 8rem;
+    }
 }
 @media (max-width:380px) {
-    .title-section{
-    }
    .box{
 
     bottom: -3rem;
@@ -322,5 +341,8 @@
     }
     .left-footer-part span{
         font-size: .8rem;
+    }
+    .zero-pokemons .zero-pokeball img{
+        width: 6rem;
     }
 }
