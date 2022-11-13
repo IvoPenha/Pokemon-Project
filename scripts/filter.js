@@ -39,6 +39,7 @@ export function pullPokemonCaseAll(){
 
 export function handleFilter(index){
     resetCardList()
+    scrollToListStart()
     cardList.appendChild(loading)
     setTimeout(()=> pullPokemonByType(index), 200)
 }
