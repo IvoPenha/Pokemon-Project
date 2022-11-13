@@ -14,44 +14,4 @@
 @import './styles/load-more-section.css';
 @import './styles/components.css/select-input.css';
 @import './styles/responsivity.css';
-
-:root{
-    --bg-color:#242020;
-    --bg-lighter:#4A4747;
-    --bg-card: #332d2d;
-    --gray-400: #4A4747;
-    --red: #f33c3cd8;
-    --type-bug: #9BBA48;
-    --type-dark: #595761;
-    --type-dragon: #2C6AC1;
-    --type-electric: #D4BC34;
-    --type-fairy: #E296E1;
-    --type-fighting: #C44D61;
-    --type-ground: #CE8056;
-    --type-ice: #71BAAC;
-    --type-normal: #909090;
-    --type-poison: #AC6ACA;
-    --type-psychic: #EB8B85;
-    --type-rock: #84BEB3;
-    --type-ghost: #616EB7;
-    --type-grass: #73B861;
-    --type-steel: #6594A1;
-    --type-water: #4F77BE;
-    --type-fire: #E96303;
-    --type-flying: #758CBD;
-    --blue-primary: #3F5DB3;
-}
-.body-wrapper{
-    position: fixed;
-    overflow-x: hidden;
-}
-*{
-    font-family: 'Montserrat', sans-serif;
-    color: #cec7c7f3;
-    box-sizing: border-box;
-    margin: 0;
-}
-html{
-    background-color: #242020;
-    overflow-x: hidden;
-}
+@import './styles/root.css';

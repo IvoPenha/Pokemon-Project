@@ -1,58 +1,58 @@
-@media (max-width: 768px){
-.left-container.grass{
+@media (max-width: 768px) {
+  .left-container.grass {
     background-image: url(./../../assets/responsive-bg-types/grass.svg);
-}
+  }
 
-.left-container.ghost{
+  .left-container.ghost {
     background-image: url(./../../assets/responsive-bg-types/ghost.svg);
-}
-.left-container.rock {
+  }
+  .left-container.rock {
     background-image: url(./../../assets/responsive-bg-types/rock.svg);
-}
-.left-container.dragon {
+  }
+  .left-container.dragon {
     background-image: url(./../../assets/responsive-bg-types/dragon.svg);
-}
-.left-container.steel{
+  }
+  .left-container.steel {
     background-image: url(./../../assets/responsive-bg-types/steel.svg);
-}
-.left-container.electric{
+  }
+  .left-container.electric {
     background-image: url(./../../assets/responsive-bg-types/electric.svg);
-}
-.left-container.water {
+  }
+  .left-container.water {
     background-image: url(./../../assets/responsive-bg-types/water.svg);
-}
-.left-container.fire{
-    background-image: url(./../../assets/responsive-bg-types/fire.svg) ;
-}
-.left-container.bug {
+  }
+  .left-container.fire {
+    background-image: url(./../../assets/responsive-bg-types/fire.svg);
+  }
+  .left-container.bug {
     background-image: url(./../../assets/responsive-bg-types/bug.svg);
-}
+  }
 
-.left-container.fairy {
+  .left-container.fairy {
     background-image: url(./../../assets/responsive-bg-types/fairy.svg);
-}
-.left-container.fighting {
+  }
+  .left-container.fighting {
     background-image: url(./../../assets/responsive-bg-types/fighting.svg);
-}
-.left-container.ground {
+  }
+  .left-container.ground {
     background-image: url(./../../assets/responsive-bg-types/ground.svg);
-}
-.left-container.ice{
+  }
+  .left-container.ice {
     background-image: url(./../../assets/responsive-bg-types/ice.svg);
-}
-.left-container.normal{
+  }
+  .left-container.normal {
     background-image: url(./../../assets/responsive-bg-types/normal.svg);
-}
-.left-container.poison{
+  }
+  .left-container.poison {
     background-image: url(./../../assets/responsive-bg-types/poison.svg);
-}
-.left-container.psychic{
+  }
+  .left-container.psychic {
     background-image: url(./../../assets/responsive-bg-types/psychic.svg);
-}
-.left-container.flying{
+  }
+  .left-container.flying {
     background-image: url(./../../assets/responsive-bg-types/flying.svg);
-}
-.left-container.dark{
+  }
+  .left-container.dark {
     background-image: url(./../../assets/responsive-bg-types/dark.svg);
-}
+  }
 }
