@@ -60,7 +60,7 @@ function handleSearch(index){
 
 function handleZeroPokemon(buscado){
     
-    cardList.innerHTML= '<button> <div class="zero-pokeball"><img src="../assets/pokeball-black.png"></div> <div class="Textos"> <p>The Pokemon or ID: <h4>'+ buscado +'</h4> <p>Does not exist</p> <p> Press this button to return </p><div/>' + ElementAllFromList.innerHTML + '</button>'
+    cardList.innerHTML= '<button> <div class="zero-pokeball"><img src="assets/pokeball-black.png"></div> <div class="Textos"> <p>The Pokemon or ID: <h4>'+ buscado +'</h4> <p>Does not exist</p> <p> Press this button to return </p><div/>' + ElementAllFromList.innerHTML + '</button>'
     cardList.firstChild.classList.add('zero-pokemons')
     cardList.firstChild.addEventListener('click',()=>{
         pullPokemonCaseAll()
