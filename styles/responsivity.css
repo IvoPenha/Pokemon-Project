@@ -342,6 +342,11 @@
     .left-footer-part span{
         font-size: .8rem;
     }
+    .zero-pokemons{
+        flex-direction: column-reverse;
+        max-height: 22rem;
+        width: 90vw;
+    }
     .zero-pokemons .zero-pokeball img{
         width: 6rem;
     }
