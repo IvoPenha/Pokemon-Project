@@ -29,6 +29,8 @@
   <li>Clique no nome de um Pokémon para ver suas informações detalhadas.</li>
 </ol>
 
+<p> <bold>Ou</bold> Acesse: https://ivopenha.github.io/Pokemon-Project/ </p>
+
 <h2>🤝 Como contribuir</h2>
 
 <p>Este projeto foi criado para fins educacionais e para servir como exemplo para outros desenvolvedores iniciantes. Contribuições são bem-vindas, mas certifique-se de discutir as alterações propostas antes de realizá-las.</p>
@@ -42,7 +44,6 @@
   <li>Faça push para o branch criado anteriormente (<code>git push origin feature/NomeDaSuaFeature</code>).</li>
   <li>Crie um pull request para o branch principal deste repositório.</li>
 </ol>
-<p> <bold>Ou</bold> Acesse: https://ivopenha.github.io/Pokemon-Project/ </p>
 <h2>👏 Agradecimentos</h2>
 
 <p>Este projeto foi inspirado na Pokedex criada pelo projeto da codeboost e utiliza a PokéAPI para obter os dados dos Pokémon. Agradecimentos especiais ao time da PokéAPI por disponibilizar uma API tão incrível e fácil de utilizar.</p>
