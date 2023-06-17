@@ -1,4 +1,4 @@
-<h1>README.md</h1>
+<h1>Projeto Pokemon</h1>
 
 <p>Este é o README.md de um projeto frontend de uma Pokedex, desenvolvido com o objetivo de servir como um primeiro contato com a biblioteca Axios e entender conceitos básicos de backend, como a obtenção de rotas.</p>
 
