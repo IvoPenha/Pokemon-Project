@@ -3,7 +3,7 @@
 <p>Este é o README.md de um projeto frontend de uma Pokedex, desenvolvido com o objetivo de servir como um primeiro contato com a biblioteca Axios e entender conceitos básicos de backend, como a obtenção de rotas.</p>
 
 
-![](CPT2306171325-1856x963.gif)
+![CPT2306171325-1856x963.gif]
 
 <h2>🚀 Tecnologias utilizadas</h2>
 
