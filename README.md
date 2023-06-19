@@ -4,7 +4,7 @@
 
 
 ![CPT2306171325-1856x963.gif]
-
+a
 <h2>🚀 Tecnologias utilizadas</h2>
 
 <ul>
